@@ -1,0 +1,90 @@
+<!-- Informa ao navegador que a extensão do documento é HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do HTML -->
+<html>
+
+<!-- Estrutura básica do cabeçalho do HTML -->
+
+<head>
+    <!-- Define o padrão de codificação para suportar caracteres especiais (letras com acentos) -->
+    <meta charset="UTF-8">
+    <!-- Faz o site usar 100% da largura da tela e funcionar bem em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liga o HTML a um arquivo CSS externo chamado "styleForm.css" para estilização -->
+    <link rel="stylesheet" href="styleForm.css">
+    <!-- Define o título da aba do navegador como "Formulário CSS" -->
+    <title>Formulário CSS</title>
+</head>
+
+<!-- Início do corpo do HTML, onde o conteúdo visível ficará -->
+
+<body>
+    <!-- Cria uma div que serve como "caixa" para agrupar o formulário -->
+    <div id="container">
+        <!-- Início do formulário, que enviará os dados para "teste.php" usando o método GET -->
+        <form action="teste.php" method="get">
+            <!-- Cria um grupo de itens do formulário -->
+            <div class="grupo">
+                <!-- Rotula o campo de texto como "Nome" -->
+                <label for="nome">Nome</label>
+                <!-- Cria um campo de texto onde o usuário pode digitar o nome -->
+                <input type="text" placeholder="Digite o nome" name="nome">
+            </div>
+
+            <!-- Outro grupo para seleção de país -->
+            <div class="grupo">
+                <!-- Rotula o campo de seleção como "País" -->
+                <label for="pais">País</label>
+                <!-- Cria uma lista suspensa (combobox) com opções de países -->
+                <select name="pais">
+                    <option value="AU">Austrália</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CD">Canadá</option>
+                    <option value="US">Estados Unidos</option>
+                </select>
+            </div>
+
+            <!-- Grupo para inserção de telefones -->
+            <div class="grupo">
+                <!-- Cria um conjunto de campos relacionados, identificado como "Telefone" -->
+                <fieldset>
+                    <legend>Telefone</legend>
+                    <!-- Campo para número residencial -->
+                    <label for="res">Residencial</label>
+                    <input type="text" name="res" placeholder="Residencial">
+                    <!-- Campo para número comercial -->
+                    <label for="com">Comercial</label>
+                    <input type="text" name="com" placeholder="Comercial">
+                </fieldset>
+            </div>
+
+            <!-- Grupo para seleção de gênero -->
+            <div class="grupo">
+                <!-- Agrupa as opções de gênero -->
+                <fieldset class="gen">
+                    <legend>Gênero</legend>
+                    <!-- Opção para feminino -->
+                    <label for="rfem">Feminino</label>
+                    <input type="radio" name="rgen" value="F">
+                    <!-- Opção para masculino -->
+                    <label for="rmas">Masculino</label>
+                    <input type="radio" name="rgen" value="M">
+                    <!-- Opção para outro gênero -->
+                    <label for="routro">Outro</label>
+                    <input type="radio" name="rgen" value="O">
+                </fieldset>
+            </div>
+
+            <!-- Grupo com botões de envio e limpeza -->
+            <div class="grupo">
+                <!-- Botão para enviar o formulário -->
+                <input type="submit" value="Enviar" class="btn">
+                <!-- Botão para limpar os campos preenchidos -->
+                <input type="reset" value="Limpar" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

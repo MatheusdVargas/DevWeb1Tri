@@ -1,0 +1,101 @@
+/* Aplica estilo básico a todos os elementos */
+* {
+    /* Deixa os cantos dos elementos arredondados */
+    border-radius: 20px;
+    /* Define o tamanho padrão do texto como 20px */
+    font-size: 20px;
+    /* Garante que o tamanho dos elementos inclua bordas e padding */
+    box-sizing: border-box;
+    /* Define a fonte padrão como Segoe UI, com alternativas caso ela não esteja disponível */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estiliza o fundo do corpo da página */
+body {
+    /* Define uma imagem como fundo do site */
+    background-image: url('cidade.jpg');
+}
+
+/* Estiliza o contêiner principal (div com id="container") */
+#container {
+    /* Usa Flexbox para alinhar elementos centralizados vertical e horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adiciona margem no topo */
+    margin-top: 3%;
+    /* Adiciona uma borda ao redor do contêiner */
+    border: 2px solid rgb(223, 223, 223);
+    /* Adiciona um fundo com gradiente de branco para cinza claro */
+    background-image: linear-gradient(to right, white, rgb(223, 223, 223));
+    /* Define a largura e altura do contêiner */
+    width: 80%;
+    height: 590px;
+    /* Centraliza o contêiner horizontalmente */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* Adiciona um espaço interno */
+    padding: 10px;
+}
+
+/* Estiliza os grupos (divs com classe="grupo") */
+.grupo {
+    /* Define a largura dos grupos */
+    width: 60vi;
+}
+
+/* Estiliza inputs, selects e fieldsets */
+input,
+select,
+fieldset {
+    /* Define a largura desses elementos */
+    width: 90%;
+    /* Adiciona espaço interno */
+    padding: 5px;
+    /* Adiciona uma borda cinza */
+    border: 2px solid rgb(78, 78, 78);
+    /* Adiciona espaço acima dos elementos */
+    margin-top: 5px;
+}
+
+/* Estiliza inputs do tipo radio */
+input[type=radio] {
+    /* Define uma largura para os botões de rádio */
+    width: 5%;
+}
+
+/* Estiliza os botões (input com classe="btn") */
+.btn {
+    /* Define a cor de fundo do botão */
+    background-color: #6d35b0;
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Remove a borda do botão */
+    border: 0px solid #6d35b0;
+}
+
+/* Estiliza os rótulos (label) */
+label {
+    /* Garante que os rótulos fiquem em uma nova linha */
+    display: block;
+}
+
+/* Estiliza rótulos dentro de fieldsets com classe "gen" */
+.gen label {
+    /* Garante que esses rótulos fiquem na mesma linha */
+    display: inline;
+}
+
+/* Estiliza inputs do tipo texto */
+input[type=text] {
+    /* Define o fundo como branco */
+    background-color: white;
+    /* Adiciona uma imagem ao fundo do input */
+    background-image: url('../imagens/searchicon.png');
+    /* Posiciona a imagem no canto esquerdo, com espaço */
+    background-position: 10px 10px;
+    /* Impede a repetição da imagem */
+    background-repeat: no-repeat;
+    /* Adiciona espaço antes do texto para não sobrepor a imagem */
+    padding-left: 40px;
+}
